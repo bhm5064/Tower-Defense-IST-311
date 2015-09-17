@@ -10,7 +10,7 @@ package towerdefense;
  * @author bhm5064
  */
 public class TowerDefense {
-//hey roy
+
     /**
      * @param args the command line arguments
      */
@@ -19,5 +19,4 @@ public class TowerDefense {
     }
     
 }
-//Apples and Bananas
-//Ben rules!!!!!!!!!!!!!
+
