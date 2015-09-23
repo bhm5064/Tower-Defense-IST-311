@@ -50,10 +50,14 @@ public class towDefGUI extends javax.swing.JFrame {
         jToggleButton1.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Classroom Defense");
+        setBackground(new java.awt.Color(0, 0, 0));
 
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 51, 51));
         jLabel1.setText("Enter Name:");
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -65,12 +69,14 @@ public class towDefGUI extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 51, 51));
         jLabel2.setText("Please Select Difficulty:");
 
         jButton2.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
         jButton2.setText("PLAY!");
 
         jLabel3.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 51, 51));
         jLabel3.setText("Highscores:");
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -81,7 +87,9 @@ public class towDefGUI extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jList1);
 
+        jLabel4.setBackground(new java.awt.Color(0, 51, 51));
         jLabel4.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 204, 204));
         jLabel4.setText("Classroom Defense");
 
         jList2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -94,14 +102,17 @@ public class towDefGUI extends javax.swing.JFrame {
 
         buttonGroup3.add(jToggleButton2);
         jToggleButton2.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        jToggleButton2.setForeground(new java.awt.Color(51, 102, 255));
         jToggleButton2.setText("EASY");
 
         buttonGroup3.add(jToggleButton3);
         jToggleButton3.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        jToggleButton3.setForeground(new java.awt.Color(51, 102, 255));
         jToggleButton3.setText("MEDIUM");
 
         buttonGroup3.add(jToggleButton4);
         jToggleButton4.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        jToggleButton4.setForeground(new java.awt.Color(51, 102, 255));
         jToggleButton4.setText("HARD");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -148,9 +159,9 @@ public class towDefGUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 233, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -162,11 +173,9 @@ public class towDefGUI extends javax.swing.JFrame {
                         .addComponent(jToggleButton4)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 331, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
-                            .addComponent(jScrollPane2))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2)))
                 .addContainerGap())
         );
 
