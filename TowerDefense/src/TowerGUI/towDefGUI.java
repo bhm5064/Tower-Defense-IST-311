@@ -5,6 +5,8 @@
  */
 package TowerGUI;
 
+import TDPlay.TDPlay;
+
 /**
  *
  * @author bqa5094
@@ -74,6 +76,11 @@ public class towDefGUI extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
         jButton2.setText("PLAY!");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 51, 51));
@@ -104,6 +111,11 @@ public class towDefGUI extends javax.swing.JFrame {
         jToggleButton2.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
         jToggleButton2.setForeground(new java.awt.Color(51, 102, 255));
         jToggleButton2.setText("EASY");
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
 
         buttonGroup3.add(jToggleButton3);
         jToggleButton3.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
@@ -185,6 +197,18 @@ public class towDefGUI extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    this.setVisible(false);
+    TDPlay play = new  TDPlay();
+    play.setVisible(true);
+        // TODO add your handling code here:*/
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+     
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     /**
      * @param args the command line arguments
