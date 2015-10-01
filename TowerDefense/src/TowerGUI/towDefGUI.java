@@ -43,9 +43,9 @@ public class towDefGUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jList2 = new javax.swing.JList();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jToggleButton4 = new javax.swing.JToggleButton();
+        togBtnEasy = new javax.swing.JToggleButton();
+        togBtnMed = new javax.swing.JToggleButton();
+        togBtnHard = new javax.swing.JToggleButton();
 
         jButton1.setText("jButton1");
 
@@ -107,25 +107,30 @@ public class towDefGUI extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jList2);
 
-        buttonGroup3.add(jToggleButton2);
-        jToggleButton2.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
-        jToggleButton2.setForeground(new java.awt.Color(51, 102, 255));
-        jToggleButton2.setText("EASY");
-        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(togBtnEasy);
+        togBtnEasy.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        togBtnEasy.setForeground(new java.awt.Color(51, 102, 255));
+        togBtnEasy.setText("EASY");
+        togBtnEasy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton2ActionPerformed(evt);
+                togBtnEasy(evt);
             }
         });
 
-        buttonGroup3.add(jToggleButton3);
-        jToggleButton3.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
-        jToggleButton3.setForeground(new java.awt.Color(51, 102, 255));
-        jToggleButton3.setText("MEDIUM");
+        buttonGroup3.add(togBtnMed);
+        togBtnMed.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        togBtnMed.setForeground(new java.awt.Color(51, 102, 255));
+        togBtnMed.setText("MEDIUM");
+        togBtnMed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                togBtnMed(evt);
+            }
+        });
 
-        buttonGroup3.add(jToggleButton4);
-        jToggleButton4.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
-        jToggleButton4.setForeground(new java.awt.Color(51, 102, 255));
-        jToggleButton4.setText("HARD");
+        buttonGroup3.add(togBtnHard);
+        togBtnHard.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        togBtnHard.setForeground(new java.awt.Color(51, 102, 255));
+        togBtnHard.setText("HARD");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -148,9 +153,9 @@ public class towDefGUI extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jToggleButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jToggleButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                                        .addComponent(jToggleButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                        .addComponent(togBtnHard, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(togBtnMed, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+                                        .addComponent(togBtnEasy, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -178,11 +183,11 @@ public class towDefGUI extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(jToggleButton2)
+                        .addComponent(togBtnEasy)
                         .addGap(18, 18, 18)
-                        .addComponent(jToggleButton3)
+                        .addComponent(togBtnMed)
                         .addGap(18, 18, 18)
-                        .addComponent(jToggleButton4)
+                        .addComponent(togBtnHard)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -199,16 +204,36 @@ public class towDefGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    this.setVisible(false);
+    this.setVisible(false);// close Jframe1 to switch to Jframe2
     TDPlay play = new  TDPlay();
     play.setVisible(true);
+    
+    
+   String name = jTextField1.getText();// store name from text box
+    
+   int diff;// setting difficulty from 1-3
+   
+   if (togBtnEasy.isSelected()){
+       diff=1;
+   }
+   else if (togBtnMed.isSelected()) {
+       diff=2;
+   } 
+   else if (togBtnHard.isSelected()){
+       diff=3; 
+    }
+   else diff =1;  // defualts game to Easy
         // TODO add your handling code here:*/
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-     
+    private void togBtnEasy(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_togBtnEasy
+    
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton2ActionPerformed
+    }//GEN-LAST:event_togBtnEasy
+
+    private void togBtnMed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_togBtnMed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_togBtnMed
 
     /**
      * @param args the command line arguments
@@ -260,8 +285,8 @@ public class towDefGUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3;
-    private javax.swing.JToggleButton jToggleButton4;
+    private javax.swing.JToggleButton togBtnEasy;
+    private javax.swing.JToggleButton togBtnHard;
+    private javax.swing.JToggleButton togBtnMed;
     // End of variables declaration//GEN-END:variables
 }
