@@ -137,9 +137,9 @@ public class TowDefGrid extends javax.swing.JFrame {
         jPanel1.add(jLabel17);
         jLabel17.setBounds(640, 420, 58, 14);
 
-        jLabel18.setText("jLabel18");
+        jLabel18.setText("Large Damage");
         jPanel1.add(jLabel18);
-        jLabel18.setBounds(640, 450, 40, 14);
+        jLabel18.setBounds(640, 450, 69, 14);
 
         jLabel19.setText("jLabel19");
         jPanel1.add(jLabel19);
