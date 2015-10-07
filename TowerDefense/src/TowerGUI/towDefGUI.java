@@ -5,7 +5,7 @@
  */
 package TowerGUI;
 
-import TDPlay.TDPlay;
+
 
 /**
  *
@@ -205,8 +205,8 @@ public class towDefGUI extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
     this.setVisible(false);// close Jframe1 to switch to Jframe2
-    TDPlay play = new  TDPlay();
-    play.setVisible(true);
+   
+   //blingblongblingingbofignbkdfjnksjd
     
     
    String name = jTextField1.getText();// store name from text box
