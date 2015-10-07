@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TowerGUI;
+package TDPlay;
 
 
 
@@ -204,9 +204,7 @@ public class towDefGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    this.setVisible(false);// close Jframe1 to switch to Jframe2
    
-   //blingblongblingingbofignbkdfjnksjd
     
     
    String name = jTextField1.getText();// store name from text box
