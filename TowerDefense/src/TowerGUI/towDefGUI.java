@@ -96,7 +96,7 @@ public class towDefGUI extends javax.swing.JFrame {
 
         jLabel4.setBackground(new java.awt.Color(0, 51, 51));
         jLabel4.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 204, 204));
+        jLabel4.setForeground(new java.awt.Color(51, 204, 255));
         jLabel4.setText("Classroom Defense");
 
         jList2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -109,7 +109,7 @@ public class towDefGUI extends javax.swing.JFrame {
 
         buttonGroup3.add(togBtnEasy);
         togBtnEasy.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
-        togBtnEasy.setForeground(new java.awt.Color(51, 102, 255));
+        togBtnEasy.setForeground(new java.awt.Color(0, 153, 255));
         togBtnEasy.setText("EASY");
         togBtnEasy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +119,7 @@ public class towDefGUI extends javax.swing.JFrame {
 
         buttonGroup3.add(togBtnMed);
         togBtnMed.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
-        togBtnMed.setForeground(new java.awt.Color(51, 102, 255));
+        togBtnMed.setForeground(new java.awt.Color(0, 153, 255));
         togBtnMed.setText("MEDIUM");
         togBtnMed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +129,7 @@ public class towDefGUI extends javax.swing.JFrame {
 
         buttonGroup3.add(togBtnHard);
         togBtnHard.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
-        togBtnHard.setForeground(new java.awt.Color(51, 102, 255));
+        togBtnHard.setForeground(new java.awt.Color(0, 153, 255));
         togBtnHard.setText("HARD");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -169,7 +169,6 @@ public class towDefGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -194,6 +193,7 @@ public class towDefGUI extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
                         .addComponent(jScrollPane2)))
                 .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
