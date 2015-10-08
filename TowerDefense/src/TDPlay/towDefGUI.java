@@ -6,7 +6,6 @@
 package TDPlay;
 
 
-
 /**
  *
  * @author bqa5094
@@ -205,7 +204,9 @@ public class towDefGUI extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
    
-    
+    this.setVisible(false);
+    TowDefGrid board = new TowDefGrid();
+    board.setVisible(true);
     
    String name = jTextField1.getText();// store name from text box
     
