@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package TDPlay;
+import TDPlay.TDGrid;
 
 
 /**
@@ -205,7 +206,7 @@ public class towDefGUI extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
    
     this.setVisible(false);
-    TowDefGrid board = new TowDefGrid();
+    TDGrid board = new TDGrid();
     board.setVisible(true);
     
    String name = jTextField1.getText();// store name from text box
@@ -289,3 +290,4 @@ public class towDefGUI extends javax.swing.JFrame {
     private javax.swing.JToggleButton togBtnMed;
     // End of variables declaration//GEN-END:variables
 }
+//test
