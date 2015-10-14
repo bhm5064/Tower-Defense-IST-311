@@ -174,7 +174,7 @@ public class TDGrid extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 750, 700);
-        jPanel1.setVisible(false);
+        jPanel1.setVisible(true);
 
         pack();
     }// </editor-fold>                        
