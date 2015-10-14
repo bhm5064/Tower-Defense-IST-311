@@ -5,9 +5,7 @@
  */
 package TDPlay;
 
-import java.awt.Color;
-import java.io.File;
-import javax.imageio.ImageIO;
+
 
 /**
  *
@@ -60,6 +58,7 @@ public class TDGrid extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Classroom Defense");
         getContentPane().setLayout(null);
 
         jPanel1.setForeground(new java.awt.Color(240, 240, 240));
@@ -100,7 +99,7 @@ public class TDGrid extends javax.swing.JFrame {
 
         jLabel5.setText("Name:");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(570, 10, 31, 14);
+        jLabel5.setBounds(570, 10, 40, 14);
         jPanel1.add(nameLabel);
         nameLabel.setBounds(604, 10, 90, 20);
 
@@ -110,15 +109,15 @@ public class TDGrid extends javax.swing.JFrame {
 
         jLabel8.setText("Stage:");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(570, 120, 32, 14);
+        jLabel8.setBounds(570, 120,40 , 14);
 
         jLabel9.setText("Money:");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(570, 160, 36, 10);
+        jLabel9.setBounds(570, 160, 40, 10);
 
         jLabel10.setText("Score:");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(570, 200, 31, 14);
+        jLabel10.setBounds(570, 200, 40, 14);
         jPanel1.add(difficultyLabel);
         difficultyLabel.setBounds(620, 80, 110, 20);
         jPanel1.add(stageLabel);
@@ -130,42 +129,42 @@ public class TDGrid extends javax.swing.JFrame {
 
         jLabel1.setText("Medium Range");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(620, 280, 80, 14);
+        jLabel1.setBounds(620, 280, 100, 14);
 
         jLabel16.setText("Medium Damage");
         jPanel1.add(jLabel16);
-        jLabel16.setBounds(620, 300, 78, 14);
+        jLabel16.setBounds(620, 300, 100, 14);
 
         jLabel17.setText("Small Range");
         jPanel1.add(jLabel17);
-        jLabel17.setBounds(620, 380, 58, 14);
+        jLabel17.setBounds(620, 380, 90, 14);
 
         jLabel18.setText("Large Damage");
         jPanel1.add(jLabel18);
-        jLabel18.setBounds(620, 400, 69, 14);
+        jLabel18.setBounds(620, 400, 90, 14);
 
         jLabel19.setText("Long Range");
         jPanel1.add(jLabel19);
-        jLabel19.setBounds(610, 460, 60, 14);
+        jLabel19.setBounds(610, 460, 90, 14);
 
         jLabel20.setText("Small Damage");
         jPanel1.add(jLabel20);
-        jLabel20.setBounds(610, 480, 70, 14);
+        jLabel20.setBounds(610, 480, 90, 14);
 
-        jLabel6.setFont(new java.awt.Font("Traditional Arabic", 1, 26)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jLabel6.setText("$15");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(700, 280, 50, 50);
+        jLabel6.setBounds(700, 250, 50, 50);
 
-        jLabel11.setFont(new java.awt.Font("Traditional Arabic", 1, 26)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jLabel11.setText("$20");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(700, 380, 50, 40);
+        jLabel11.setBounds(700, 350, 50, 40);
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 26)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel12.setText("$10");
         jPanel1.add(jLabel12);
-        jLabel12.setBounds(700, 460, 50, 40);
+        jLabel12.setBounds(700, 430, 50, 40);
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TDPlay/GameGrid.jpg"))); // NOI18N
         jLabel15.setText("jLabel15");
@@ -173,7 +172,7 @@ public class TDGrid extends javax.swing.JFrame {
         jLabel15.setBounds(0, 0, 750, 700);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 750, 700);
+        jPanel1.setBounds(540, 160, 750, 700);
         jPanel1.setVisible(true);
 
         pack();
