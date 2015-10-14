@@ -18,6 +18,7 @@ public class TDGrid extends javax.swing.JFrame {
      */
     public TDGrid() {
         initComponents();
+         this.setSize(750,700);  
     }
 
     /**
@@ -172,7 +173,7 @@ public class TDGrid extends javax.swing.JFrame {
         jLabel15.setBounds(0, 0, 750, 700);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(540, 160, 750, 700);
+        jPanel1.setBounds(0, 0, 750, 700);
         jPanel1.setVisible(true);
 
         pack();
@@ -200,20 +201,20 @@ public class TDGrid extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TowDefGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TDGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TowDefGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TDGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TowDefGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TDGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TowDefGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TDGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TowDefGrid().setVisible(true);
+                new TDGrid().setVisible(true);
             }
         });
     }
