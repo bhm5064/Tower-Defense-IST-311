@@ -18,7 +18,7 @@ public class TDGrid extends javax.swing.JFrame {
      */
     public TDGrid() {
         initComponents();
-         this.setSize(750,700);  
+         this.setSize(765,730);  
     }
 
     /**
