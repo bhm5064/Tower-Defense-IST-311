@@ -331,6 +331,18 @@ public class TDGrid extends javax.swing.JFrame {
                 }
 	}
     }
+    
+    public void delete(int i, Enemy enem) {
+            enemies.remove[i];
+    }
+    
+    public void createArray() {
+            ArrayList<Enemy> enemies = new ArrayList<Enemy>();
+            for (int i = 1; i <= Enemy.quantity; i++) {
+                    Enemy enem = new Enemy();
+                    enemies.add(enem);
+            }
+    }
   
     
     
