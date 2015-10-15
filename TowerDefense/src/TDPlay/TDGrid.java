@@ -6,8 +6,12 @@
 package TDPlay;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
 import java.io.File;
+import static java.lang.Math.abs;
+import java.util.ArrayList;
 import javax.imageio.ImageIO;
+import javax.swing.Timer;
 
 /**
  *
@@ -210,7 +214,8 @@ public class TDGrid extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(TowDefGrid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
+       
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -219,6 +224,105 @@ public class TDGrid extends javax.swing.JFrame {
         });
     }
     
+    public void actionPerformed(ActionEvent event)
+    {
+        Object obj = event.getSource();
+        if(obj == nextRound){
+            Enemy enemy = new Enemy();
+            enemy.createArray();
+
+            Timer time;
+            int delay = 100;
+            time = new Timer(delay,this);
+
+            time.start();
+        }
+        if(obj == time){
+            execute();
+        }
+    }
+    
+    public void execute(Enemy enem) {
+        ArrayList<HomeWorkTosser> hwt = new ArrayList<HomeWorkTosser>();
+        ArrayList<EraserCannon> ec = new ArrayList<EraserCannon>();
+        ArrayList<PaperFootballLauncher> pfl = new ArrayList<PaperFootballLauncher>();
+        
+        for (Enemy e : enem) {
+            int i = 0;
+            move(e, i);
+            for (Tower t : hwt) {
+                    if (checkRange(e,t)) {fire(t, e);}
+            }
+            for (t : ec) {
+                    if (checkRange(e,t)) {fire(t, e);}
+            }
+            for (t : pfl) {
+                    if (checkRange(e,t)) {fire(t, e);}
+            }
+            i++;
+        }
+        if (enemies.isEmpty()) {
+                time.stop();
+        }
+    }
+    
+    public boolean checkRange(Enemy enem, Weapons tower) {
+        int dist;
+	if (enem.visible) {
+		dist = sqrt(math.pow(abs(enem.x - tower.x),2) + math.pow(abs(enem.y - tower.y),2));
+		if (dist < tower.range()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+        }
+	else {
+		return false;
+	}
+    }
+
+    public void fire(Weapons tower, Enemy enem, Player player) {
+	enem.decreaseResilience(tower.damage);
+	if (enem.resilience<=0) {
+		enem.setInvisible();
+		player.increaseScore();
+	}
+    }
+
+    public void move(Enemy enem, Player player) {
+	if (enem.y < 280 && enem.path == 1) {enem.increaseY();}
+	else {
+		if(enem.path < 2) {enem.path(2);}
+		if (enem.x > 20 && enem.path == 2) {enem.decreaseX();}
+		else {
+			if(enem.path < 3) {enem.path(3);}
+			if (enem.y < 490 && enem.path == 3) {enem.increaseY();}
+			else {
+				if(enem.path < 4) {enem.path(4);}
+				if (enem.x < 220 && enem.path == 4) {enem.increaseX();}
+				else {
+					if(enem.path < 5) {enem.path(5);}
+					if (enem.y > 190 && enem.path == 5) {enem.decreaseY();}
+					else {
+						if(enem.path < 6) {enem.path(6);}
+						if (enem.x < 370 && enem.path == 6) {enem.increaseX();}
+						else {enem.increaseY();}
+					}
+				}
+			}
+		}
+	}
+	if (enem.y > 700) {
+		if (enem.visible) {
+			player.decreaseHealth();
+			player.decreaseScore();
+                }
+                else {
+			enem.delete();
+                }
+	}
+    }
   
     
     
