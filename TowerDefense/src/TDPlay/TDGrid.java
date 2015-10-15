@@ -155,7 +155,7 @@ public class TDGrid extends javax.swing.JFrame {
         
         nxtRound.setText("NEXT ROUND!");
         jPanel1.add(nxtRound);
-        nxtRound.setBounds(570, 510, 150, 160);
+        nxtRound.setBounds(570, 510, 150, 160);    
        
 
         jLabel6.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
