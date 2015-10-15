@@ -57,6 +57,7 @@ public class TDGrid extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        nxtRound = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Classroom Defense");
@@ -151,6 +152,11 @@ public class TDGrid extends javax.swing.JFrame {
         jLabel20.setText("Small Damage");
         jPanel1.add(jLabel20);
         jLabel20.setBounds(610, 480, 90, 14);
+        
+        nxtRound.setText("NEXT ROUND!");
+        jPanel1.add(nxtRound);
+        nxtRound.setBounds(570, 510, 150, 160);
+       
 
         jLabel6.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jLabel6.setText("$15");
@@ -231,6 +237,7 @@ public class TDGrid extends javax.swing.JFrame {
     private javax.swing.JButton EraserCanButton;
     private javax.swing.JButton HWTosserbutton;
     private javax.swing.JButton PaperFootButton;
+    private javax.swing.JButton nxtRound;
     private javax.swing.JLabel difficultyLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
